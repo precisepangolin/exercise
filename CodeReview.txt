@@ -1,0 +1,11 @@
+1. Moved each class into a separate class file
+2. Fixed typo in CSV filename in Program.cs
+3. In DataReader changed "for (int i = 0; i <= importedLines.Count; i++)" to avoid looping out of the importedLines array
+4. In DataReader added the condition "if (values.Count() == 7)" to avoid attempting to assign values that were not added to the csv file
+5. In DataReader removed empty initial ImportedObject from ImportedObjects list
+6. Made DataReader's main method return a list of imported objects to be then displayed by a separate Display class to make it more OOP
+7. Simplified some of the code with LINQ and methods
+8. Removed unused printData bool
+9. Added try-catch to handle errors in case file cannot be read
+10. Formatting changes
+11. Removed unused imports and separate Name from ImportedObject class
